@@ -1,5 +1,6 @@
 FROM resin/rpi-raspbian
 
-VOLUME /var/lib/postgresql/9.4/main
+RUN mkdir /var/database
+VOLUME /var/database
 
 CMD ["true"]
